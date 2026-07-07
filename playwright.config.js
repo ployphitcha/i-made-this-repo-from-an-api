@@ -6,7 +6,7 @@ module.exports = defineConfig({
   use: {
     screenshot: 'on',
     video: 'on',
-    headless: false,
+    headless: true,
     launchOptions: {
       slowMo: 2000, 
     },
