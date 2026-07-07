@@ -74,7 +74,7 @@ test('TC_08 : Login is unsuccessful when the correct username is entered and the
 });
 
 
-test('TC_09 : Login is unsuccessful when a wrong username is entered and the password is empty.' , async ({page}) => {
+test.only('TC_09 : Login is unsuccessful when a wrong username is entered and the password is empty.' , async ({page}) => {
     await page.goto('https://qa-practice.razvanvancea.ro/auth_ecommerce.html');
     await page.locator('#email').fill('wrong_username');
     // await page.locator('#password').fill('');
